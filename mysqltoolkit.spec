@@ -6,13 +6,13 @@ Version:	848
 Release:	1
 License:	GPL v2
 Group:		Applications/Databases
-BuildRequires:	rpm-perlprov >= 4.1-13
 Source0:	http://dl.sourceforge.net/mysqltoolkit/%{name}-%{version}.tar.gz
 # Source0-md5:	1e2ddc0e109362649af329153fb81da6
 URL:		http://mysqltoolkit.sourceforge.net/
 BuildRequires:	perl-ExtUtils-MakeMaker
-Requires:	perl-DBI >= 1.13
+BuildRequires:	rpm-perlprov >= 4.1-13
 Requires:	perl-DBD-mysql >= 1.0
+Requires:	perl-DBI >= 1.13
 Requires:	perl-Term-ReadKey >= 2.10
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
