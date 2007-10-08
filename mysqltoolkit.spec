@@ -2,12 +2,12 @@
 %define		pdir	mysqltoolkit
 Summary:	MySQL Toolkit
 Name:		mysqltoolkit
-Version:	848
+Version:	1012
 Release:	1
 License:	GPL v2
 Group:		Applications/Databases
 Source0:	http://dl.sourceforge.net/mysqltoolkit/%{name}-%{version}.tar.gz
-# Source0-md5:	1e2ddc0e109362649af329153fb81da6
+# Source0-md5:	b4a919c97b220f5d986509583b6bce5d
 URL:		http://mysqltoolkit.sourceforge.net/
 BuildRequires:	perl-ExtUtils-MakeMaker
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -46,6 +46,8 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/mysql-deadlock-logger
 %attr(755,root,root) %{_bindir}/mysql-duplicate-key-checker
 %attr(755,root,root) %{_bindir}/mysql-find
+%attr(755,root,root) %{_bindir}/mysql-heartbeat
+%attr(755,root,root) %{_bindir}/mysql-parallel-dump
 %attr(755,root,root) %{_bindir}/mysql-profile-compact
 %attr(755,root,root) %{_bindir}/mysql-query-profiler
 %attr(755,root,root) %{_bindir}/mysql-show-grants
@@ -59,6 +61,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man1/mysql-deadlock-logger.1p*
 %{_mandir}/man1/mysql-duplicate-key-checker.1p*
 %{_mandir}/man1/mysql-find.1p*
+%{_mandir}/man1/mysql-heartbeat.1p*
+%{_mandir}/man1/mysql-parallel-dump.1p*
 %{_mandir}/man1/mysql-profile-compact.1p*
 %{_mandir}/man1/mysql-query-profiler.1p*
 %{_mandir}/man1/mysql-show-grants.1p*
