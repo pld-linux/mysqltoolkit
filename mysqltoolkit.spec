@@ -1,6 +1,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	mysqltoolkit
 Summary:	MySQL Toolkit
+Summary(pl.UTF-8):	MySQL Toolkit - zestaw narzędzi do MySQL-a
 Name:		mysqltoolkit
 Version:	1012
 Release:	1
@@ -19,8 +20,14 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 MySQL Toolkit is a collection of essential command-line utilities for
-MySQL. ach is completely stand-alone, without dependencies other than
+MySQL. Each is completely stand-alone, without dependencies other than
 core Perl and the DBI drivers needed to connect to MySQL.
+
+%description -l pl.UTF-8
+MySQL Toolkit to zbiór ważnych narzędzi uruchamianych z linii poleceń
+dla MySQL-a. Każde z nich jest w pełni samodzielne, bez zależności
+większych niż podstawowa instalacja Perla i terowniki DBI potrzebne do
+połączenia z bazą MySQL.
 
 %prep
 %setup -q
